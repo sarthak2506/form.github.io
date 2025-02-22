@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display:flex;
+}
+.field{
+    width: 150px;
+}
+
+.input{
+    flex: 1;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-group label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group input[type="radio"],
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+}

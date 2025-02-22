@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="registrationForm">
+            
+            <div class="form-group">
+                <div class="field"><label for="name">Name:</label></div>
+                <div class="input"><input type="text" id="name" name="name" required class="box" placeholder="Enter your name"></div>
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="field"><label for="email">Email ID:</label></div>
+                <div class="input"><input type="email" id="email" name="email" required placeholder="Enter your BITS Email id"></div>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="field"><label for="phone">Phone Number:</label></div>
+                <div class="input"><input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"></div>
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="field"><label for="bitsId">BITS ID:</label></div>
+                <div class="input"><input type="text" id="bitsId" name="bitsId" required placeholder="Enter your BITS id"></div>
+                <span class="error" id="bitsIdError"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="field"><label for="hostel">Choose Hostel:</label></div>
+                <select id="hostel" name="hostel" required>
+                    <option value="" disabled selected hidden>Select Hostel</option>
+                    <option value="hostel1">Gandhi Bhawan</option>
+                    <option value="hostel2">Krishna Bhawan</option>
+                    <option value="hostel3">SR Bhawan</option>
+                </select>
+                <span class="error" id="hostelError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Choose Size:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" id="sizeSmall" name="size" value="small" required>
+                        <span>Small</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="sizeMedium" name="size" value="medium">
+                        <span>Medium</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="sizeLarge" name="size" value="large">
+                        <span>Large</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="sizeXtraLarge" name="size" value="Xtralarge">
+                        <span>XtraLarge</span>
+                    </label>
+                </div>
+                <span class="error" id="sizeError"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <span>I agree to the terms and conditions</span>
+                </label>
+                <span class="error" id="termsError"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
